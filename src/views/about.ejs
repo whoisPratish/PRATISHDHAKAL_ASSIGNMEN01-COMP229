@@ -1,52 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .custom-control-label::before {
+            background-color: #343a40;
+        }
+        .custom-control-label::after {
+            background-color: #fff;
+        }
+        .dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .dark-mode .custom-text-color {
+            color: #00bcd4;
+        }
+    </style>
 </head>
+
+
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Pratish Dhakal</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="custom-control custom-switch ml-auto">
+            <input type="checkbox" class="custom-control-input" id="darkModeToggle">
+            <label class="custom-control-label" for="darkModeToggle">Dark Mode</label>
+        </div>
+    </nav>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/">Pratish Dhakal</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/services">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/contact">Contact</a>
-        </li>
-      </ul>
+    <div class="container mt-5">
+        <h1>About Me</h1>
+        <p class="lead">
+            Welcome to my portfolio website. I am passionate about web development and design. With a background in computer science and a love for creativity, I enjoy creating beautiful and functional websites.
+        </p>
+        <p>
+            In my free time, I like to explore new technologies, work on open-source projects, and share my knowledge through tutorials and articles.
+        </p>
     </div>
-  </nav>
 
-  <div class="container mt-5">
-    <h1>About Me</h1>
-    <p class="lead">
-      Welcome to my portfolio website. I am passionate about web development and design. With a background in computer science and a love for creativity, I enjoy creating beautiful and functional websites.
-    </p>
-    <p>
-      In my free time, I like to explore new technologies, work on open-source projects, and share my knowledge through tutorials and articles.
-    </p>
-  </div>
-
-  
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
 </body>
 </html>

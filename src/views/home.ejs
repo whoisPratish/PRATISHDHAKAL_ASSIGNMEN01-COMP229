@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .custom-control-label::before {
+            background-color: #343a40;
+        }
+        .custom-control-label::after {
+            background-color: #fff;
+        }
+        .dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .dark-mode .custom-text-color {
+            color: #00bcd4;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -32,31 +47,31 @@
                     </li>
                 </ul>
             </div>
+            <div class="custom-control custom-switch ml-auto">
+                <input type="checkbox" class="custom-control-input" id="darkModeToggle">
+                <label class="custom-control-label" for="darkModeToggle">Dark Mode</label>
+            </div>
         </nav>
     </header>
     <main class="container mt-5">
         <section class="jumbotron">
             <h1 class="display-4">Welcome to My Portfolio</h1>
             <p class="lead">Hi, I'm PRATISH DHAKAL.</p>
-            <a class="btn btn-primary btn-lg" href="/about" role="button">Learn More</a>
+            <a class="btn btn-primary btn-lg custom-text-color" href="/about" role="button">Learn More</a>
         </section>
-
         <section class="text-center">
             <img src="/images/IMG_1807.jpeg" alt="Your Image" class="img-fluid rounded-circle" style="max-width: 300px;">
         </section>
-
-
+        <section class="text-center mt-4">
+            <a href="resume.pdf" class="btn btn-primary custom-text-color" target="_blank">Download Resume (PDF)</a>
+        </section>
     </main>
     <footer class="bg-light text-center py-3">
-        <p>&copy; 2023 Pratish Dhakal</p>
+        <p class="custom-text-color">&copy; 2023 Pratish Dhakal</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          alert('Welcome to my portfolio!');
-        });
-        </script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
